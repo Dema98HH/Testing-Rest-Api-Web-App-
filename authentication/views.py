@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.shortcuts import render
 from rest_framework.views import APIView
-from .serializers import UserCreationSerializer
+from .serializers import UserCreationSerializer, User
+from auth.users.serializers import UserSerializer
 from rest_framework.response import Response
 from rest_framework.exceptions import AuthenticationFailed
 from .models import User
